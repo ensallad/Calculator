@@ -49,7 +49,7 @@ namespace Calculator
             else clear();
            
         }
-        //test
+        
         private void clear()
         {
             numbers[0] = numbers[1] = null;
