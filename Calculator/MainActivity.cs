@@ -23,7 +23,7 @@ namespace Calculator
             SetContentView(Resource.Layout.Main);
 
             calculatorText = FindViewById<TextView>(Resource.Id.calculator_text_view);
-            //updateCalculatorText();
+
         }
         [Java.Interop.Export("buttonClick")]
         public void buttonClick(View v)
@@ -128,9 +128,7 @@ namespace Calculator
                     numbers[index] = newNumber;
                     updateCalculatorText();
                 }
-                //string newNumber = "0" + value;
-                //numbers[index] = newNumber;
-                //updateCalculatorText();
+
             }
             if (value == "," && numbersIn == "")
             {
@@ -152,10 +150,6 @@ namespace Calculator
                     updateCalculatorText();
                 }
 
-
-                //string newNumber = "0" + value;
-                //numbers[index] = newNumber;
-                //updateCalculatorText();
             }
             if (value == "," && numbers[index].Contains(","))
             {
@@ -179,8 +173,7 @@ namespace Calculator
                 numbers[index] += value;
                 updateCalculatorText();
             }
-            //numbers[index] += value;
-            //updateCalculatorText();
+
         }
 
         private void updateCalculatorText()
@@ -299,7 +292,7 @@ namespace Calculator
           
 
         }
-        //test for method that enables to start with a negative numbers ex -40 + 20
+        //Method that enables to start a calculation with a negative numbers ex -40 + 20
         private void startWithNegativeNumber()
         {
             if (numbers[0] == null)
